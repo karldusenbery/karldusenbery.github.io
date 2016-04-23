@@ -95,7 +95,247 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* Global
+   ================================================================ */
 
+html {
+ /*  Place your base font size here */
+ font-size: 20px;
+}
+
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #222;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+li {
+  list-style: none;
+}
+
+/* Headings
+   ================================================================ */
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1;
+  float: left;
+  margin-top: 0.25rem;
+}
+
+h2 {
+  font-family: "Source Sans Pro";
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Merriweather", serif;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+
+
+/* Text Styles
+   ================================================================ */
+a, a:visited {
+  text-decoration: none;
+  color: #222222;
+}
+
+p {
+  margin: 0 0 30px;
+}
+
+
+
+
+/* Header/Footer
+   ================================================================ */
+header, footer {
+  color: white;
+  background-color: #FD9D00;
+}
+
+header {
+  padding: 0 10px;
+  max-height: 40px;
+  border-bottom: 4px solid #3b3a3a;
+}
+
+footer {
+  clear: both;
+  padding: 25px 38px;
+}
+
+footer p {
+  margin: 0;
+}
+
+
+
+/* Navigation
+   ================================================================ */
+nav {
+  float: right;
+  padding: 0px;
+  text-align: right;
+}
+header nav ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+nav li {
+  float: left;
+  text-align: center;
+}
+
+nav a {
+  display: block;
+  padding: 5px;
+}
+
+nav a:hover {
+  color: #fbd334;
+}
+
+header nav strong {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* Buttons
+   ================================================================ */
+.button, .button:visited {
+  font-family: "Oswald", sans-serif;
+  display: block;
+  padding: 12px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #222;
+  border-radius: 5px;
+  background: #deece6;
+  box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
+}
+
+/* Super info button in blurb */
+.blurb .button {
+  transition: all .2s ease;
+  color: white;
+  background: #fa4542;
+}
+
+.blurb .button:hover {
+  color: white;
+  background: #f6201d;
+}
+
+
+/* Tagline
+   ================================================================ */
+.tagline {
+  font-family: "Merriweather", serif;
+  font-size: 1.25rem;
+  font-style: italic;
+  line-height: 1em;
+  margin: 0;
+  padding: 25px;
+  text-align: center;
+  border-top: 1px solid #aaa;
+  background-color: #deece6;
+}
+
+
+/* Banner
+   ================================================================ */
+.blurb {
+  float: right;
+  width: 520px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, .8);
+  box-shadow: 0 0 5px rgba(0,0,0,.75);
+}
+
+.banner {
+  overflow: hidden;
+  padding: 3%;
+  background-image: url(../images/coworking.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: inset 0 0 5px rgba(0,0,0,.75);
+}
+
+
+/* Info Sections (Call to action columns)
+   ================================================================ */
+.info {
+  float: left;
+  width: 33.333333334%;
+  margin: 25px 0;
+  padding: 24px 38px;
+  border-right: 1px solid rgba(0,0,0,.15);
+}
+
+.info:last-of-type {
+  border-right: none;
+}
+
+/* Responsive layouts
+   ================================================================ */
+ @media screen and (max-width: 900px) {
+
+  /* Header */
+  header {
+    height: 64px;
+  }
+
+  h1 {
+    font-size: 1rem;
+    margin: 20px 0px;
+  }
+
+
+  /* Navigaton*/
+  nav ul {
+    display: none;
+    float: none;
+  }
+
+  .hamburger {
+    display: inline-block;
+    margin: 10px 0px 10px 0px;
+  }
+
+  .tagline {
+    display: none;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  /* Etc.*/
+  .blurb {
+    float: none;
+    width: 90%
+  }
+} /* End Responsive layout for a max-width: of 900px
+   ================================================================ */
 
 
 
