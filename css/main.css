@@ -95,12 +95,27 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* ==========================================================================
+   Global Overrides
+  ========================================================================== */
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+
 /* Global
    ================================================================ */
 
 html {
  /*  Place your base font size here */
  font-size: 20px;
+ color: #FD9D00;
 }
 
 
@@ -109,6 +124,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   color: #222;
+  background-color: #FD9D00;
 
   -webkit-font-smoothing: antialiased;
 }
@@ -125,7 +141,7 @@ h1 {
   font-size: 1.5rem;
   line-height: 1;
   float: left;
-  margin-top: 0.25rem;
+  margin-top: 0.20rem;
 }
 
 h2 {
@@ -164,18 +180,28 @@ header, footer {
   background-color: #FD9D00;
 }
 
+header img {
+  float: left;
+  margin-top: 0.05rem;
+  margin-right: 0.33rem;
+  border: 2px solid black;
+  border-radius: 10px 10px 10px 10px;
+}
+
 header {
-  padding: 0 10px;
-  max-height: 40px;
-  border-bottom: 4px solid #3b3a3a;
+  padding: 0 0.5%;
+  max-height: 2.1rem;
+  border-bottom: 4px solid black;
 }
 
 footer {
   clear: both;
-  padding: 25px 38px;
+  padding: 0 1%;
+  max-height: 2.1rem;
 }
 
 footer p {
+  color: black;
   margin: 0;
 }
 
@@ -188,7 +214,7 @@ nav {
   padding: 0px;
   text-align: right;
 }
-header nav ul {
+nav ul {
     padding: 0px;
     margin: 0px;
 }
@@ -204,7 +230,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #fbd334;
+  color: #deece6;
 }
 
 header nav strong {
@@ -214,6 +240,9 @@ header nav strong {
 
 .hamburger {
   display: none;
+  float: right;
+  cursor: pointer;
+  color: black;
 }
 
 /* Buttons
@@ -250,9 +279,9 @@ header nav strong {
   font-family: "Merriweather", serif;
   font-size: 1.25rem;
   font-style: italic;
-  line-height: 1em;
+  line-height: 1rem;
   margin: 0;
-  padding: 25px;
+  padding: 1rem 0.5%;
   text-align: center;
   border-top: 1px solid #aaa;
   background-color: #deece6;
@@ -265,7 +294,7 @@ header nav strong {
   float: right;
   width: 520px;
   margin: 0 auto;
-  padding: 50px;
+  padding: 4%;
   background-color: rgba(255, 255, 255, .8);
   box-shadow: 0 0 5px rgba(0,0,0,.75);
 }
@@ -273,9 +302,9 @@ header nav strong {
 .banner {
   overflow: hidden;
   padding: 3%;
-  background-image: url(../images/coworking.jpg);
-  background-repeat: no-repeat;
+  background-image: url(../img/forest.jpeg);
   background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 5px rgba(0,0,0,.75);
 }
@@ -285,69 +314,102 @@ header nav strong {
    ================================================================ */
 .info {
   float: left;
-  width: 33.333333334%;
-  margin: 25px 0;
-  padding: 24px 38px;
-  border-right: 1px solid rgba(0,0,0,.15);
+  width: 92%;
+  margin: 4% 4% 0% 4%;
+  padding: 2% 1.5%;
+  border: 3px solid black;
+  border-radius: 10px;
+  
 }
 
 .info:last-of-type {
-  border-right: none;
+  margin-bottom: 4%;
 }
 
 /* Responsive layouts
    ================================================================ */
- @media screen and (max-width: 900px) {
+ @media screen and (max-width: 1000px) {
+  html {
+    font-size: 16px;
+  }
 
-  /* Header */
+  header img {
+    max-height: 28px;
+    max-width: 28px;
+  }
+}
+
+
+@media screen and (max-width: 730px) {
+
   header {
-    height: 64px;
-  }
-
-  h1 {
-    font-size: 1rem;
-    margin: 20px 0px;
-  }
-
-
-  /* Navigaton*/
-  nav ul {
-    display: none;
-    float: none;
-  }
-
-  .hamburger {
-    display: inline-block;
-    margin: 10px 0px 10px 0px;
+    border-bottom: 0px solid black;
   }
 
   .tagline {
     display: none;
   }
 
-  .info {
+  .banner {
     width: 100%;
   }
 
-  /* Etc.*/
   .blurb {
     float: none;
-    width: 90%
+    width: 90%;
   }
-} /* End Responsive layout for a max-width: of 900px
+
+  header img {
+    max-height: 32px;
+    max-width: 32px;
+    margin-top: 7px;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+    line-height: 2;
+  }
+
+
+  /* Hamburger Menu Styles */
+
+  .hamburger {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+    font-size: 24px;
+  }
+
+  nav {
+    width: 100%;
+    float: right;
+    clear: both;
+    padding-left: 10px;
+  }
+
+  nav li {
+    display: block;
+    float: none;
+    text-align: left;
+  }
+
+
+  nav ul {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height 350ms ease-in-out;
+    transition: height 350ms ease-in-out;
+  }
+
+  .open {
+    display: inline;
+    height: 350px;
+    width: 100%;
+  }
+}
+/* End Responsive layouts
    ================================================================ */
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
