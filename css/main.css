@@ -189,6 +189,10 @@ header img {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
   padding: 0 0.5%;
   max-height: 2.1rem;
   border-bottom: 4px solid black;
@@ -276,6 +280,9 @@ header nav strong {
 /* Tagline
    ================================================================ */
 .tagline {
+  position: relative;
+  top: 2.1rem;
+  width: 100%;
   font-family: "Merriweather", serif;
   font-size: 1.25rem;
   font-style: italic;
@@ -300,6 +307,8 @@ header nav strong {
 }
 
 .banner {
+  position: relative;
+  top: 2.1rem;
   overflow: hidden;
   padding: 3%;
   background-image: url(../img/forest.jpeg);
@@ -313,6 +322,8 @@ header nav strong {
 /* Info Sections (Call to action columns)
    ================================================================ */
 .info {
+  position: relative;
+  top: 25px;
   float: left;
   width: 92%;
   margin: 4% 4% 0% 4%;
@@ -362,12 +373,13 @@ header nav strong {
   header img {
     max-height: 32px;
     max-width: 32px;
-    margin-top: 7px;
+    margin-top: 1px;
   }
 
   header h1 {
     font-size: 1.2rem;
     line-height: 2;
+    margin-top: 1px;
   }
 
 
@@ -375,7 +387,7 @@ header nav strong {
 
   .hamburger {
     position: absolute;
-    top: 10px;
+    top: 5px;
     right: 10px;
     display: block;
     font-size: 24px;
