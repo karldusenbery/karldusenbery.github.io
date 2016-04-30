@@ -300,9 +300,11 @@ header nav strong {
 /* Banner
    ================================================================ */
 .blurb {
+  position: relative;
+  z-index: 1;
   float: right;
   width: 520px;
-  margin: 0 auto;
+  margin: 4%;
   padding: 4%;
   background-color: rgba(255, 255, 255, .8);
   box-shadow: 0 0 5px rgba(0,0,0,.75);
@@ -312,13 +314,45 @@ header nav strong {
   position: relative;
   top: 2.1rem;
   overflow: hidden;
-  padding: 3%;
-  background-image: url(../img/forest.jpeg);
+  box-shadow: inset 0 0 5px rgba(0,0,0,.75);
+}
+
+#img1 {
+  background-image: url(../img/banner/chicago.jpeg);
+}
+#img2 {
+  background-image: url(../img/banner/forest.jpeg);
+}
+#img3 {
+  background-image: url(../img/banner/gg-bridge-friends.jpeg);
+}
+#img4 {
+  background-image: url(../img/banner/hiking.jpeg);
+}
+#img5 {
+  background-image: url(../img/banner/wooden-bridge.jpeg);
+}
+
+#bannerImg {
+  position: absolute;
+  z-index: 0;
+  width: 500%;
+}
+
+#bannerImg div {
+  float: left;
+  width: 20%;
+  height: 570px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset 0 0 5px rgba(0,0,0,.75);
+  transition: margin-left 1s ease;
 }
+
+.img-moved-left {
+  margin-left: -100%;
+}
+
 
 
 /* Info Sections (Call to action columns)
@@ -395,17 +429,6 @@ header nav strong {
     font-size: 24px;
   }
 
-  nav {
-    width: 130px;
-    background-color: #FD9D00;
-    margin-top: -18px;
-    margin-right: -3px;
-    float: right;
-    clear: both;
-    padding-left: 10px;
-    border-radius: 0px 0px 0px 10px;
-  }
-
   nav li {
     display: block;
     float: none;
@@ -414,6 +437,13 @@ header nav strong {
 
 
   nav ul {
+    width: 130px;
+    background-color: #FD9D00;
+    top: 30px;
+    right: 0;
+    position: absolute;
+    padding-left: 10px;
+    border-radius: 0px 0px 0px 10px;
     height: 0;
     overflow: hidden;
     -webkit-transition: height 350ms ease-in-out;
@@ -421,7 +451,7 @@ header nav strong {
   }
 
   .open {
-    display: inline;
+    height: 180px;
   }
 }
 /* End Responsive layouts
