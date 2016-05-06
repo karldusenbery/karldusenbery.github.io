@@ -378,7 +378,7 @@ header nav strong {
   background-image: url(../img/banner/wooden-bridge.jpeg);*/
 }
 
-#bannerImg {
+/*#bannerImg {
   position: absolute;
   z-index: 0;
   width: 500%;
@@ -393,7 +393,7 @@ header nav strong {
   background-size: cover;
   -webkit-transition: margin-left 1s ease;
           transition: margin-left 1s ease;
-}
+}*/
 
 /*Move image one over to the left*/
 .img-moved-left {
@@ -403,6 +403,10 @@ header nav strong {
 /*Move image one over to the right*/
 .img-moved-right {
   margin-right: -100%;
+}
+
+.banner video {
+  z-index: 0;
 }
 
 .banner-blurb {
