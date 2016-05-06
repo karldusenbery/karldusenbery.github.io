@@ -10,6 +10,8 @@
         <link rel="shortcut icon" href="favicon.ico" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
+        
+        <link rel="stylesheet" href="css/vendor/bootstrap.css">
 
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
@@ -27,53 +29,82 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <header class="clearfix">
-            <img src="img/logo.jpg" alt="logo" height="34" width="34">
-            <h1><a href="index.html">TourWithMe</a></h1>
-            <nav>
-            <!-- hamburger icon (uses fontawesome icon) -->
-            <i class="fa fa-bars hamburger"></i>
-                <ul id="menu" class="clearfix">
-                    <li><strong><a href="book.html">Book a tour</a></strong></li>
-                    <li><strong><a href="create.html">Create a tour</a></strong></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="team.html">Our Team</a></li>
-                    <li><strong><a href="login.html">Log in</a></strong></li>    
-                </ul>
-            </nav>
-        </header>
+            <header class="clearfix">
+                <img src="img/logo.jpg" alt="logo" height="34" width="34" >
+                <h1><a href="index.html">TourWithMe</a></h1>
+                <nav>
+                    <!-- hamburger icon (uses fontawesome icon) -->
+                    <i class="fa fa-bars hamburger"></i>
+                    <ul id="menu" class="clearfix">
+                        <li><strong><a href="book.html">Book a tour</a></strong></li>
+                        <li><strong><a href="create.html">Create a tour</a></strong></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><strong><a href="login.html">Log in</a></strong></li>    
+                    </ul>
+                </nav>
+            </header>
 
-        <p class="tagline">Tour like the locals do.</p>
-        <section class="clearfix banner">
-        <div id="bannerImg">
-            <div id="img1"></div>
-            <div id="img2"></div>
-            <div id="img3"></div>
-            <div id="img4"></div>
-            <div id="img5"></div>
-        </div>
-            <div class="blurb">
-              <h2>Come tour with me!</h2>
-              <p>Are you looking for an authentic local experience? Do you have local knowledge that you'd like to share? TourWithMe connects travelers with locals, as well as locals with other locals, to promote an authentic experience when exploring new places and discovering fun things to do.</p>
-              <a class="button" href="login.html">Let's get started</a>
+            <p class="tagline">Tour like the locals do.</p>
+            <section class="clearfix banner">
+            <div id="bannerImg">
+                <div id="img1"></div>
+                <div id="img2"></div>
+                <div id="img3"></div>
+                <div id="img4"></div>
+                <div id="img5"></div>
             </div>
-        </section>
-        <section class="info" id="taste">
-            <h3>Tour by your taste buds</h3>
-            <p>Are you a foodie? Have a refined pallet? Like to taste local wines, craft beer, specialty coffee, fine whiskey? There are others out there that can show you where!</p>
-            
-        </section>
-        <section class="info" id="sights">
-            <h3>Tour by your eyes</h3>
-            <p>Looking for that best kept secret scenic destination that only the locals know? TourWithMe connects you to that person who can show you where!</p>
-        </section>
-        <section class="info" id="sounds">
-            <h3>Tour by your ears</h3>
-            <p>Want to rock on 'till the break of dawn? Looking for that cool little chill music joint where the local bands play? Find a buddy that can intoduce you to the city's sound!</p>
-        </section>
-        <footer>
-            <p>© 2016 TourWithMe. Made in San Francisco.</p>
-        </footer>
+                <div class="banner-blurb">
+                  <h2>Come tour with me!</h2>
+                  <p>Are you looking for an authentic local experience? Do you have local knowledge that you'd like to share? TourWithMe connects travelers with locals, as well as locals with other locals, to promote an authentic experience when exploring new places and discovering fun things to do.</p>
+                  <a class="button" href="login.html">Let's get started</a>
+                </div>
+            </section>
+            <section class="info" id="taste">
+                <div class="infoImg">
+                    <div id="tasteImg1"></div>
+                    <div id="tasteImg2"></div>
+                    <div id="tasteImg3"></div>
+                    <div id="tasteImg4"></div>
+                    <div id="tasteImg5"></div>
+                </div>
+                <div class="left-blurb" id="taste">
+                  <h2>Tour by your taste buds</h2>
+                  <p>Are you a foodie? Have a refined pallet? Like to taste local wines, craft beer, specialty coffee, fine whiskey? There are others out there that can show you where!</p>
+                  <a class="button" href="login.html">Book now</a>
+                </div>
+            </section>
+            <section class="info" id="sights">
+                <div class="infoImg">
+                    <div id="sightsImg1"></div>
+                    <div id="sightsImg2"></div>
+                    <div id="sightsImg3"></div>
+                    <div id="sightsImg4"></div>
+                    <div id="sightsImg5"></div>
+                </div>
+                <div class="right-blurb">
+                  <h2>Tour by your eyes</h2>
+                  <p>Looking for that best kept secret scenic destination that only the locals know? TourWithMe connects you to that person who can show you where!</p>
+                  <a class="button" href="login.html">Book now</a>
+                </div>
+            </section>
+            <section class="info" id="sounds">
+                <div class="infoImg">
+                    <div id="soundsImg1"></div>
+                    <div id="soundsImg2"></div>
+                    <div id="soundsImg3"></div>
+                    <div id="soundsImg4"></div>
+                    <div id="soundsImg5"></div>
+                </div>
+                <div class="left-blurb">
+                  <h2>Tour by your ears</h2>
+                  <p>Want to rock on 'till the break of dawn? Looking for that cool little chill music joint where the local bands play? Find a buddy that can intoduce you to the city's sound!</p>
+                  <a class="button" href="login.html">Book now</a>
+                </div>
+            </section>
+            <footer>
+                <p>© 2016 TourWithMe. Made in San Francisco.</p>
+            </footer>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>

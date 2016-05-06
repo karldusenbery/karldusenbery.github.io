@@ -122,6 +122,7 @@ html {
 body {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 20px;
+  font-size: 20px;
   font-size: 1rem;
   line-height: 1.5;
   color: #222;
@@ -140,15 +141,18 @@ li {
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
+  font-size: 30px;
   font-size: 1.5rem;
   line-height: 1;
   float: left;
+  margin-top: 4px;
   margin-top: 4px;
   margin-top: 0.20rem;
 }
 
 h2 {
   font-family: "Source Sans Pro";
+  font-size: 30px;
   font-size: 30px;
   font-size: 1.5rem;
   font-weight: 700;
@@ -157,6 +161,7 @@ h2 {
 
 h3 {
   font-family: "Merriweather", serif;
+  font-size: 25px;
   font-size: 25px;
   font-size: 1.25rem;
   margin: 0;
@@ -188,7 +193,9 @@ header, footer {
 header img {
   float: left;
   margin-top: 1px;
+  margin-top: 1px;
   margin-top: 0.05rem;
+  margin-right: 6px;
   margin-right: 6px;
   margin-right: 0.33rem;
   border: 2px solid black;
@@ -202,6 +209,7 @@ header {
   z-index: 100;
   padding: 0 0.5%;
   max-height: 42px;
+  max-height: 42px;
   max-height: 2.1rem;
   border-bottom: 4px solid black;
 }
@@ -209,6 +217,7 @@ header {
 footer {
   clear: both;
   padding: 0 1%;
+  max-height: 42px;
   max-height: 42px;
   max-height: 2.1rem;
   position: relative;
@@ -276,17 +285,42 @@ header nav strong {
 }
 
 /* Super info button in blurb */
-.blurb .button {
+.left-blurb .button {
   -webkit-transition: all .2s ease;
           transition: all .2s ease;
   color: white;
   background: #fa4542;
 }
 
-.blurb .button:hover {
+.left-blurb .button:hover {
   color: white;
   background: #f6201d;
 }
+
+.right-blurb .button {
+  -webkit-transition: all .2s ease;
+          transition: all .2s ease;
+  color: white;
+  background: #fa4542;
+}
+
+.right-blurb .button:hover {
+  color: white;
+  background: #f6201d;
+}
+
+.banner-blurb .button {
+  -webkit-transition: all .2s ease;
+          transition: all .2s ease;
+  color: white;
+  background: #fa4542;
+}
+
+.banner-blurb .button:hover {
+  color: white;
+  background: #f6201d;
+}
+
 
 
 /* Tagline
@@ -294,15 +328,19 @@ header nav strong {
 .tagline {
   position: relative;
   top: 42px;
+  top: 42px;
   top: 2.1rem;
   width: 100%;
   font-family: "Merriweather", serif;
   font-size: 25px;
+  font-size: 25px;
   font-size: 1.25rem;
   font-style: italic;
   line-height: 20px;
+  line-height: 20px;
   line-height: 1rem;
   margin: 0;
+  padding: 20px 0.5%;
   padding: 20px 0.5%;
   padding: 1rem 0.5%;
   text-align: center;
@@ -313,23 +351,15 @@ header nav strong {
 
 /* Banner
    ================================================================ */
-.blurb {
-  position: relative;
-  z-index: 1;
-  float: right;
-  width: 520px;
-  margin: 4%;
-  padding: 4%;
-  background-color: rgba(255, 255, 255, .8);
-  box-shadow: 0 0 5px rgba(0,0,0,.75);
-}
 
 .banner {
   position: relative;
   top: 42px;
   top: 2.1rem;
   overflow: hidden;
-  box-shadow: inset 0 0 5px rgba(0,0,0,.75);
+  width: 100%;
+  height: 650px;
+  /*box-shadow: inset 0 0 5px rgba(0,0,0,.75);*/
 }
 
 #img1 {
@@ -357,7 +387,7 @@ header nav strong {
 #bannerImg div {
   float: left;
   width: 20%;
-  height: 570px;
+  height: 649px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -365,11 +395,26 @@ header nav strong {
           transition: margin-left 1s ease;
 }
 
+/*Move image one over to the left*/
 .img-moved-left {
   margin-left: -100%;
 }
 
+/*Move image one over to the right*/
+.img-moved-right {
+  margin-right: -100%;
+}
 
+.banner-blurb {
+  position: relative;
+  z-index: 1;
+  float: right;
+  width: 70%;
+  margin: 4% 15%;
+  padding: 4%;
+  background-color: rgba(255, 255, 255, .8);
+  box-shadow: 0 0 5px rgba(0,0,0,.75);
+}
 
 /* Info Sections (Call to action columns)
    ================================================================ */
@@ -378,6 +423,7 @@ header nav strong {
   top: 25px;
   float: left;
   width: 92%;
+  height: 650px;
   margin: 4% 4% 0% 4%;
   padding: 2% 1.5%;
   border: 3px solid black;
@@ -387,6 +433,96 @@ header nav strong {
 
 .info:last-of-type {
   margin-bottom: 4%;
+}
+
+.infoImg {
+  position: absolute;
+  /*top: 0px;
+  left: 0px;*/
+  z-index: 0;
+  width: 500%;
+}
+
+.infoImg div {
+  float: left;
+  width: 20%;
+  height: 644px;
+  border-radius: 7px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: margin-left 1s ease;
+          transition: margin-left 1s ease;
+}
+
+#tasteImg1 {
+  background-image: url(../img/info/eat_1.jpeg);
+}
+#tasteImg2 {
+  background-image: url(../img/info/drink_1.jpeg);
+}
+#tasteImg3 {
+  background-image: url(../img/info/eat_2.jpeg);
+}
+#tasteImg4 {
+  background-image: url(../img/info/drink_2.jpeg);
+}
+#tasteImg5 {
+  background-image: url(../img/info/eat_3.jpeg);
+}
+
+#sightsImg1 {
+  background-image: url(../img/info/sights_1.jpeg);
+}
+#sightsImg2 {
+  background-image: url(../img/info/sights_2.jpeg);
+}
+#sightsImg3 {
+  background-image: url(../img/info/sights_3.jpeg);
+}
+#sightsImg4 {
+  background-image: url(../img/info/sights_4.jpeg);
+}
+#sightsImg5 {
+  background-image: url(../img/info/sights_5.jpeg);
+}
+
+#soundsImg1 {
+  background-image: url(../img/info/sounds_1.jpg);
+}
+#soundsImg2 {
+  background-image: url(../img/info/sounds_2.jpeg);
+}
+#soundsImg3 {
+  background-image: url(../img/info/sounds_3.jpeg);
+}
+#soundsImg4 {
+  background-image: url(../img/info/sounds_4.jpeg);
+}
+#soundsImg5 {
+  background-image: url(../img/info/sounds_5.jpeg);
+}
+
+.right-blurb {
+  position: relative;
+  z-index: 1;
+  float: right;
+  width: 520px;
+  margin: 4%;
+  padding: 4%;
+  background-color: rgba(255, 255, 255, .8);
+  box-shadow: 0 0 5px rgba(0,0,0,.75);
+}
+
+.left-blurb {
+  position: relative;
+  z-index: 1;
+  float: left;
+  width: 520px;
+  margin: 4%;
+  padding: 4%;
+  background-color: rgba(255, 255, 255, .8);
+  box-shadow: 0 0 5px rgba(0,0,0,.75);
 }
 
 /* Responsive layouts
@@ -417,9 +553,10 @@ header nav strong {
     width: 100%;
   }
 
-  .blurb {
+  .banner-blurb, .left-blurb, .right-blurb {
     float: none;
     width: 90%;
+    margin: 5%;
   }
 
   header img {
