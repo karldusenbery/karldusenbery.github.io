@@ -14,14 +14,6 @@ setInterval(function() {
 }, 3000);
 
 
-// transition end events
-// when transitions end:
-// $('#bannerImg').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', 'div', function () {
-//  // append this to end of #bannerImg
-//  $('#bannerImg').append(this);
-//  // remove img-moved-left class
-//  $(this).removeClass('img-moved-left');
-// });
 $('.infoImg').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', 'div', function () {
     // append this to end of .infoImg
     $(this).closest('.infoImg').append(this);
