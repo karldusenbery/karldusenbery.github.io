@@ -1,0 +1,123 @@
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #f1f1f1;
+  font-family: 'Merriweather', sans-serif;
+  padding: 1em;
+}
+
+h1 {
+  text-align: center;
+  color: #a8a8a8;
+}
+
+form {
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto 20px;
+}
+
+form input, form textarea {
+  border: 0;
+  outline: 0;
+  padding: 1em;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  font-family: 'Merriweather', sans-serif;
+  resize: none;
+}
+
+form input[type="submit"] {
+  color: white;
+  background: #deece6;
+  cursor: pointer;
+}
+
+form textarea {
+  height: 188px;
+}
+
+.column {
+  float: left;
+  width: 49%;
+  margin-bottom: 1em;
+}
+
+.column:first-of-type {
+  margin-right: 2%;
+}
+
+.message {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .8em;
+  padding: 10px;
+  margin: 25px auto 0;
+  display: block;
+  max-width: 600px;
+/*  border-radius: 8px;*/
+  display: none;
+  color: white;
+}
+
+.error {
+  padding-left: 20px;
+  background-color: #fc5846;
+}
+
+.error li:before {
+  content: '- ';
+}
+
+.error li:first-child:before {
+  content: '';
+}
+
+.error li:first-child {
+  margin-left: 0;
+  content: '';
+}
+
+.error li {
+  margin-left: 40px;
+}
+
+li {
+  list-style: none;
+}
+ 
+.success {
+  background-color: #1bb580;
+}
+ 
+.error.visible, .success.visible {
+  display: block;    
+}
+
+
+@media (max-width: 480px) {
+  .column {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+  }
+}

@@ -1,23 +1,32 @@
 // When you click on .hamburger
 $('.hamburger').on('click', function () {
-	// Slide toggle the menu
-	$('#menu').toggleClass('open');
-	console.log('You clicked the hamburger');
+    // Slide toggle the menu
+    $('#menu').toggleClass('open');
+    console.log('You clicked the hamburger');
 });
 
 // Every 3 seconds display a new random image in the .banner
 setInterval(function() {
-	// Add .img-moved-left to first image (look up first-of-type)
-	// $('#bannerImg div:first-of-type').addClass('img-moved-left');
-	$('.infoImg div:first-of-type').addClass('img-moved-left');
+    // Add .img-moved-left to first image (look up first-of-type)
+    // $('#bannerImg div:first-of-type').addClass('img-moved-left');
+    $('.infoImg div:first-of-type').addClass('img-moved-left');
 
 }, 3000);
 
+
+// transition end events
+// when transitions end:
+// $('#bannerImg').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', 'div', function () {
+//  // append this to end of #bannerImg
+//  $('#bannerImg').append(this);
+//  // remove img-moved-left class
+//  $(this).removeClass('img-moved-left');
+// });
 $('.infoImg').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', 'div', function () {
-	// append this to end of .infoImg
-	$(this).closest('.infoImg').append(this);
-	// remove img-moved-left class
-	$(this).removeClass('img-moved-left');
+    // append this to end of .infoImg
+    $(this).closest('.infoImg').append(this);
+    // remove img-moved-left class
+    $(this).removeClass('img-moved-left');
 });
 
 /** Document Ready Functions **/
@@ -65,6 +74,8 @@ function scaleBannerVideoSize(element){
         windowHeight = $(window).height(),
         videoWidth,
         videoHeight;
+    
+    console.log(windowHeight);
 
     $(element).each(function(){
         var videoAspectRatio = $(this).data('height')/$(this).data('width'),
@@ -84,17 +95,3 @@ function scaleBannerVideoSize(element){
 
     });
 }
-
-/*
-switch out video when current one has ended.
-*/
-//create and array of video sources
-var bannerVids = ["market.mp4", "River-Side.mp4"]
-
-//create a string that has the path appended to then insert into the src
-var nextVid = ("vids/" + bannerVids[1]);
-
-//listen for video to end
-$('.banner video').on('ended', function () {
-	$('.banner video').attr('src', nextVid );
-});
