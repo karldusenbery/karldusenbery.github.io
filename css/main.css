@@ -123,6 +123,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 20px;
   font-size: 20px;
+  font-size: 20px;
   font-size: 1rem;
   line-height: 1.5;
   color: #222;
@@ -142,9 +143,11 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   font-size: 30px;
+  font-size: 30px;
   font-size: 1.5rem;
   line-height: 1;
   float: left;
+  margin-top: 4px;
   margin-top: 4px;
   margin-top: 4px;
   margin-top: 0.20rem;
@@ -154,6 +157,7 @@ h2 {
   font-family: "Source Sans Pro";
   font-size: 30px;
   font-size: 30px;
+  font-size: 30px;
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0;
@@ -161,6 +165,7 @@ h2 {
 
 h3 {
   font-family: "Merriweather", serif;
+  font-size: 25px;
   font-size: 25px;
   font-size: 25px;
   font-size: 1.25rem;
@@ -194,7 +199,9 @@ header img {
   float: left;
   margin-top: 1px;
   margin-top: 1px;
+  margin-top: 1px;
   margin-top: 0.05rem;
+  margin-right: 6px;
   margin-right: 6px;
   margin-right: 6px;
   margin-right: 0.33rem;
@@ -210,6 +217,7 @@ header {
   padding: 0 0.5%;
   max-height: 42px;
   max-height: 42px;
+  max-height: 42px;
   max-height: 2.1rem;
   border-bottom: 4px solid black;
 }
@@ -217,6 +225,7 @@ header {
 footer {
   clear: both;
   padding: 0 1%;
+  max-height: 42px;
   max-height: 42px;
   max-height: 42px;
   max-height: 2.1rem;
@@ -329,17 +338,21 @@ header nav strong {
   position: relative;
   top: 42px;
   top: 42px;
+  top: 42px;
   top: 2.1rem;
   width: 100%;
   font-family: "Merriweather", serif;
+  font-size: 25px;
   font-size: 25px;
   font-size: 25px;
   font-size: 1.25rem;
   font-style: italic;
   line-height: 20px;
   line-height: 20px;
+  line-height: 20px;
   line-height: 1rem;
   margin: 0;
+  padding: 20px 0.5%;
   padding: 20px 0.5%;
   padding: 20px 0.5%;
   padding: 1rem 0.5%;
@@ -355,6 +368,7 @@ header nav strong {
 
 .banner {
   position: relative;
+  top: 42px;
   top: 42px;
   top: 2.1rem;
   overflow: hidden;
