@@ -380,6 +380,7 @@ header nav strong {
   overflow: hidden;
   width: 100%;
   height: 650px;
+  margin-bottom: 50px;
 }
 
 .banner video {
@@ -460,7 +461,6 @@ header nav strong {
 .input-field {
   float: left;
   margin: 10px;
-  text-align: center;
 }
 
 #location{
@@ -468,12 +468,7 @@ header nav strong {
 }
 
 #date-picker{
-  width: 20%;
-}
-
-.input-label{
-  float: left;
-  margin: 10px;
+  width: 184px;
 }
 
 /* Info Sections (Call to action columns)
@@ -495,7 +490,7 @@ header nav strong {
 }
 
 #taste {
-  margin-top: 8%;
+  margin-top: 0;
 }
 
 .info:last-of-type {
@@ -673,7 +668,24 @@ header nav strong {
   }
 
   .open {
-    height: 180px;
+    height: 210px;
+  }
+
+  #searchbar {
+    height: 15%;
+  }
+
+  .input-field {
+    margin: 2%;
+  }
+
+  #location{
+    width: 96%;
+  }
+
+  #date-picker{
+    width: 96%;
+
   }
 }
 /* End Responsive layouts
