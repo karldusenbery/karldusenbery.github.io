@@ -231,14 +231,20 @@ footer {
   max-height: 2.1rem;
   position: relative;
   top: 25px;
+  border-top: 2px solid black;
 }
 
-footer p {
+footer ul {
+  float: left;
   color: black;
-  margin: 0px 0px 0px 10px
+  margin: 10px 5px 5px -40px
 }
 
-
+footer i {
+  float: right;
+  margin: 10px;
+  color: black;
+}
 
 /* Navigation
    ================================================================ */
@@ -374,11 +380,12 @@ header nav strong {
   overflow: hidden;
   width: 100%;
   height: 650px;
+  margin-bottom: 50px;
 }
 
 .banner video {
   position: absolute;
-  z-index: 0;
+  z-index: 2;
   bottom: 0;
 }
 
@@ -386,7 +393,7 @@ header nav strong {
   width: 100%;
 }
 
-/*#img1 {
+#img1 {
   background-image: url(../img/banner/chicago.jpeg);
 }
 #img2 {
@@ -404,20 +411,20 @@ header nav strong {
 
 #bannerImg {
   position: absolute;
-  z-index: 0;
+  z-index: 1;
   width: 500%;
 }
 
 #bannerImg div {
   float: left;
   width: 20%;
-  height: 649px;
+  height: 665px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-transition: margin-left 1s ease;
           transition: margin-left 1s ease;
-}*/
+}
 
 /*Move image one over to the left*/
 .img-moved-left {
@@ -431,13 +438,43 @@ header nav strong {
 
 .banner-blurb {
   position: relative;
-  z-index: 1;
+  z-index: 3;
   float: right;
   width: 70%;
   margin: 4% 15%;
   padding: 4%;
   background-color: rgba(255, 255, 255, .8);
   box-shadow: 0 0 5px rgba(0,0,0,.75);
+  border-radius: 5px;
+}
+
+#searchbar {
+  position: absolute;
+    bottom: 0;
+    left: 0;
+  z-index: 4;
+  width: 100%;
+  padding-bottom: 4.5%;
+  height: 8.5%;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.input-field {
+  float: left;
+  height: 1.5rem;
+  margin: 1.25%;
+  border-radius: 3px;
+}
+.input-field:first-of-type {
+  margin-left: 2.5%;
+}
+
+#location{
+  width: 73.25%;
+}
+
+#date-picker{
+  width: 20.5%;
 }
 
 /* Info Sections (Call to action columns)
@@ -456,6 +493,10 @@ header nav strong {
   -webkit-box-shadow: 0px 0px 59px 7px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 59px 7px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 59px 7px rgba(0,0,0,0.75);
+}
+
+#taste {
+  margin-top: 0;
 }
 
 .info:last-of-type {
@@ -539,6 +580,7 @@ header nav strong {
   padding: 4%;
   background-color: rgba(255, 255, 255, .8);
   box-shadow: 0 0 5px rgba(0,0,0,.75);
+  border-radius: 5px;
 }
 
 .left-blurb {
@@ -550,6 +592,7 @@ header nav strong {
   padding: 4%;
   background-color: rgba(255, 255, 255, .8);
   box-shadow: 0 0 5px rgba(0,0,0,.75);
+  border-radius: 5px;
 }
 
 /* Responsive layouts
@@ -563,10 +606,18 @@ header nav strong {
     max-height: 28px;
     max-width: 28px;
   }
+  .input-field {
+    height: 1.875rem;
+  }
+
+  #searchbar {
+    height: 8.25%;
+    padding-bottom: 4.5%;
+  }
 }
 
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 655px) {
 
   header {
     border-bottom: 0px solid black;
@@ -631,7 +682,52 @@ header nav strong {
   }
 
   .open {
-    height: 180px;
+    height: 210px;
+  }
+
+  #searchbar {
+    height: 17.5%;
+    padding-bottom: 4.5%;
+  }
+
+  .input-field {
+    margin: 2%;
+  }
+
+  .input-field:first-of-type {
+   margin-left: 2%;
+}
+
+  #location{
+    width: 96%;
+  }
+
+  #date-picker{
+    width: 96%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+   #searchbar {
+    height: 15.5%;
+  }
+
+   .input-field {
+    margin-bottom: 1%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+   #searchbar {
+    height: 14.5%;
+    padding-bottom: 4.5%;
+  }
+}
+
+@media screen and (max-width: 345px) {
+   #searchbar {
+    height: 13.5%;
+    padding-bottom: 4.5%;
   }
 }
 /* End Responsive layouts

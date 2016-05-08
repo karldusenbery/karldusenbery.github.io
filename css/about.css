@@ -1,0 +1,40 @@
+.wrapper {
+	position: relative;
+	top: 2.1rem;
+	margin: 2.1rem 10px;
+}
+
+#download-today {
+	display: block;
+	clear: both;
+	width: 100%;
+	text-align: center;
+}
+
+#icon-img-container {
+	display: block;
+	clear: both;
+	width: 100%;
+	text-align: center;
+}
+
+#icon-image {
+	height: 240px;
+	width: 240px;
+	border-radius: 10px;
+	border: 3px solid black;
+}
+
+#app-btn-container {
+	display: block;
+	clear: both;
+	text-align: center;
+}
+.app-button {
+	display: inline-block;
+	clear: both;
+	margin: 10px;
+	border: 2px solid black;
+	border-radius: 10px;
+	overflow: hidden;
+}
