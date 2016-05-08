@@ -460,6 +460,14 @@ header nav strong {
 .input-field {
   float: left;
   margin: 10px;
+  text-align: center;
+}
+
+#location{
+  width: 40%;
+}
+
+#date-picker{
   width: 20%;
 }
 
