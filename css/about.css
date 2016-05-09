@@ -11,6 +11,12 @@
 	text-align: center;
 }
 
+#download-today strong {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+
 #icon-img-container {
 	display: block;
 	clear: both;

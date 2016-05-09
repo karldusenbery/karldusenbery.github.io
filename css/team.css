@@ -3,3 +3,154 @@
 	top: 2.1rem;
 	margin: 2.1rem 10px;
 }
+
+#our-team {
+	display: block;
+	clear: both;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 150px;
+	font-family: "Oswald", sans-serif;
+	margin: 0;
+}
+
+#members {
+	width: 80%;
+	margin: 0 10%;
+}
+.separator-bottom {
+	display: block;
+	clear: both;
+	margin-bottom:30px;
+	margin-top: 0;
+	height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+
+.separator-top {
+	display: block;
+	clear: both;
+	margin-top: 30px;
+	margin-bottom: 0;
+	height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+#the-pros p {
+	float: left;
+	text-transform: uppercase;
+	font-size: 50px;
+	margin: 0;
+}
+
+.member-row {
+	display: block;
+	clear: both;
+	height: 528px;
+	width: 80%
+}
+
+.member-info {
+	display: block;
+	clear: both;
+	float: right;
+	width: 100%;
+	height: auto;
+}
+
+.member-img {
+	display: block;
+	text-align: center;
+	width: 130%;
+	height: 264px;
+}
+
+.member-img img {
+	border-radius: 140px;
+	border: 5px solid black;
+	overflow: hidden;
+	width: 264px;
+	height: 264px;
+}
+
+.member-name {
+	display: block;
+	clear: both;
+	width: 100%;
+	font-size: 64px;
+	font-family: 'Nunito', sans-serif;
+	margin: 0;
+}
+
+.member-title {
+	display: block;
+	clear: both;
+	width: 100%;
+	font-size: 45px;
+	font-family: 'Nunito', sans-serif;
+	margin: 0;
+}
+
+.member-email {
+	display: block;
+	clear: both;
+	width: 100%;
+	font-size: 28px;
+	font-style: italic;
+	font-family: 'Nunito', sans-serif;
+	margin: 0;
+}
+
+.member-email a:hover {
+	color: blue;
+}
+
+.member-paragraph {
+	display: block;
+	clear: both;
+	width: 100%;
+	font-size: 24px;
+	font-family: 'Nunito', sans-serif;
+	margin: 30 0 0 15px;
+}
+
+/*responsive layouts*/
+@media screen and (max-width: 672px) {
+	#our-team {
+		font-size: 75px;
+		font-family: "Oswald", sans-serif;
+		margin: 0;
+	}
+
+	#members {
+	width: 95%;
+	margin: 0 2.5%;
+}
+
+	.member-row {
+		margin: 0 .5%;
+	}
+
+	.member-name {
+	font-size: 32px;
+
+	}
+	.member-title {
+		font-size: 24px;
+	}
+
+	.member-email {
+		font-size: 18px;
+	}
+
+	.member-paragraph {
+		font-size: 14px;
+	}
+}
