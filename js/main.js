@@ -1,22 +1,86 @@
 // When you click on .hamburger
-$('.hamburger').on('click', function () {
+$('#menuIcon').on('click', function () {
     // Slide toggle the menu
-    $('#menu').toggleClass('open');
-    console.log('You clicked the hamburger');
+    $('.hamburger-menu').toggleClass('open');
+    console.log("you clicked on the hamburger");
 });
 
-// Every 3 seconds display a new random image in the .banner
-setInterval(function() {
-    // Add .img-moved-left to first image (look up first-of-type)
-    // $('#bannerImg div:first-of-type').addClass('img-moved-left');
-    $('.infoImg div:first-of-type').addClass('img-moved-left');
+$('header img').on('click', function () {
+    // Slide toggle the menu
+    console.log("you clicked on the header image.");
+});
 
-}, 3000);
 
+var bannerImgTimer;
+var tasteImgTimer;
+var sightsImgTimer;
+var soundsImgTimer;
+
+$( document ).ready(function() {
+    console.log( "page ready!" );
+    $('.banner-blurb').addClass('slide-banner-blurb-down');
+    bannerImgTimer = setInterval(function() {
+	    // Add .img-moved-left to first image
+	    $('#bannerImg div:first-of-type').addClass('img-moved-left');
+	}, 5000);
+});
+
+$(window).on('scroll', function () {
+	if ($(window).scrollTop() >= 0) {
+		console.log("you scrolled " + $(window).scrollTop() + " pixels from the top." );
+		bannerImgTimer = setInterval(function() {
+		    // Add .img-moved-left to first image
+		    $('#bannerImg div:first-of-type').addClass('img-moved-left');
+		}, 5000);
+	}
+});
+
+$(window).on('scroll', function () {
+	if ($(window).scrollTop() >= 320) {
+		console.log("you scrolled greater than 320 pixels from the top." );
+		$('#taste .left-blurb').css('display', 'block');
+		clearInterval(bannerImgTimer);
+		tasteImgTimer = setInterval(function() {
+		    // Add .img-moved-left to first image
+		    $('#taste .infoImg div:first-of-type').addClass('img-moved-left');
+		}, 5000);
+	}
+});
+
+$(window).on('scroll', function () {
+	if ($(window).scrollTop() >= 995) {
+		console.log("you scrolled greater than 995 pixels from the top." );
+		$('#sights .right-blurb').css('display', 'block');
+		clearInterval(tasteImgTimer);
+		sightsImgTimer = setInterval(function() {
+		    // Add .img-moved-right to first image
+		    $('#sights .infoImg div:first-of-type').addClass('img-moved-left');
+		}, 5000);
+	}
+});
+
+$(window).on('scroll', function () {
+	if ($(window).scrollTop() >= 1800) {
+		console.log("you scrolled greater than 1800 pixels from the top." );
+		$('#sounds .left-blurb').css('display', 'block');
+		clearInterval(sightsImgTimer);
+		soundsImgTimer = setInterval(function() {
+		    // Add .img-moved-left to first image
+		    $('#sounds .infoImg div:first-of-type').addClass('img-moved-left');
+		}, 5000);
+	}
+});
 
 $('.infoImg').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', 'div', function () {
     // append this to end of .infoImg
     $(this).closest('.infoImg').append(this);
+    // remove img-moved-left class
+    $(this).removeClass('img-moved-left');
+});
+
+$('#bannerImg').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', 'div', function () {
+    // append this to end of .infoImg
+    $(this).closest('#bannerImg').append(this);
     // remove img-moved-left class
     $(this).removeClass('img-moved-left');
 });

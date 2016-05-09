@@ -385,12 +385,10 @@ header nav strong {
 
 .banner video {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   bottom: 0;
-}
-
-.banner video.fillWidth {
-  width: 100%;
+  left: 0;
+  /*height: 650px*/;
 }
 
 #img1 {
@@ -411,14 +409,14 @@ header nav strong {
 
 #bannerImg {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   width: 500%;
 }
 
 #bannerImg div {
   float: left;
   width: 20%;
-  height: 665px;
+  height: 650px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -431,21 +429,21 @@ header nav strong {
   margin-left: -100%;
 }
 
-/*Move image one over to the right*/
-.img-moved-right {
-  margin-right: -100%;
-}
-
 .banner-blurb {
   position: relative;
   z-index: 3;
   float: right;
   width: 70%;
-  margin: 4% 15%;
+  margin: -100% 15% 5% 15%;
   padding: 4%;
   background-color: rgba(255, 255, 255, .8);
   box-shadow: 0 0 5px rgba(0,0,0,.75);
   border-radius: 5px;
+  transition: margin 1000ms ease-in;
+}
+
+.slide-banner-blurb-down {
+  margin: 5% 15%;
 }
 
 #searchbar {
@@ -497,6 +495,18 @@ header nav strong {
 
 #taste {
   margin-top: 0;
+}
+
+#taste .left-blurb {
+  display: none;
+}
+
+#sights .right-blurb{
+  display: none;
+}
+
+#sounds .left-blurb {
+  display: none;
 }
 
 .info:last-of-type {
@@ -597,6 +607,7 @@ header nav strong {
 
 /* Responsive layouts
    ================================================================ */
+
  @media screen and (max-width: 1000px) {
   html {
     font-size: 16px;
@@ -617,7 +628,7 @@ header nav strong {
 }
 
 
-@media screen and (max-width: 655px) {
+@media screen and (max-width: 672px) {
 
   header {
     border-bottom: 0px solid black;
@@ -650,7 +661,7 @@ header nav strong {
   }
 
 
-  /* Hamburger Menu Styles */
+  /* Begin hamburger menu styles */
 
   .hamburger {
     position: absolute;
@@ -658,6 +669,10 @@ header nav strong {
     right: 10px;
     display: block;
     font-size: 24px;
+  }
+
+  nav a:hover {
+    color: red;
   }
 
   nav li {
@@ -669,8 +684,8 @@ header nav strong {
 
   nav ul {
     width: 130px;
-    background-color: #FD9D00;
-    top: 30px;
+    background-color: #deece6;
+    top: 34px;
     right: 0;
     position: absolute;
     padding-left: 10px;
@@ -684,6 +699,8 @@ header nav strong {
   .open {
     height: 210px;
   }
+
+  /* End hamburger menu styles */
 
   #searchbar {
     height: 17.5%;
