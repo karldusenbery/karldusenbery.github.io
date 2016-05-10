@@ -11,11 +11,22 @@ $('header img').on('click', function () {
 });
 
 //respnsive social link icons for mobile
-if ($(window).width() < 347 ) {
+if ($(window).width() < 358 ) {
 	console.log("window is less than 347 pixels wide.")
 	$('footer i').removeClass('fa-3x');
 	$('footer i').addClass('fa-2x');
 }
+$(window).on ('resize' , function() {
+	if ($(window).width() < 358 ) {
+		console.log("window is less than 347 pixels wide.")
+		$('footer i').removeClass('fa-3x');
+		$('footer i').addClass('fa-2x');
+	}
+	else {
+		$('footer i').removeClass('fa-2x');
+		$('footer i').addClass('fa-3x');
+	}
+});
 
 
 var bannerImgTimer;
