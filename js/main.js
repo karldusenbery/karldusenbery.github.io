@@ -10,6 +10,13 @@ $('header img').on('click', function () {
     console.log("you clicked on the header image.");
 });
 
+//respnsive social link icons for mobile
+if ($(window).width() < 347 ) {
+	console.log("window is less than 347 pixels wide.")
+	$('footer i').removeClass('fa-3x');
+	$('footer i').addClass('fa-2x');
+}
+
 
 var bannerImgTimer;
 var tasteImgTimer;
@@ -27,7 +34,7 @@ $( document ).ready(function() {
 
 $(window).on('scroll', function () {
 	if ($(window).scrollTop() >= 0) {
-		console.log("you scrolled " + $(window).scrollTop() + " pixels from the top." );
+		//console.log("you scrolled " + $(window).scrollTop() + " pixels from the top." );
 		bannerImgTimer = setInterval(function() {
 		    // Add .img-moved-left to first image
 		    $('#bannerImg div:first-of-type').addClass('img-moved-left');

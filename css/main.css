@@ -755,7 +755,7 @@ header nav strong {
   }
 }
 
-@media screen and (max-width: 345px) {
+@media screen and (max-width: 347px) {
    #searchbar {
     height: 13.5%;
     padding-bottom: 4.5%;
