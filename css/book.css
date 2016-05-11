@@ -1,0 +1,11 @@
+#tourBox {
+	display: inline-block;
+	float: left;
+	height: 650px;
+	width: 46%;
+	padding: 2%;
+	margin: 2%;
+	background-color: yellow;
+	border: 2px solid black;
+	border-radius: 10px;
+}
