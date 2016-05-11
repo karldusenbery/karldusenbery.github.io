@@ -29,8 +29,9 @@
 }
 
 .tour-title-and-user-image {
-	height: 100px;
+	height: 160px;
 	width: 100%;
+	overflow: hidden;
 	margin-top: 2%;
 }
 
@@ -38,7 +39,8 @@
 	float: left;
 	width: 68%;
 	padding: 1%;
-
+	font-size: 24px;
+	font-weight: bold;
 }
 
 .profile-image {
@@ -55,4 +57,8 @@
 	object-fit: cover;
 	border: 2px solid black;
 	border-radius: 200px;
+}
+.profile-image p {
+	font-size: 18px;
+	font-weight: bold;
 }
