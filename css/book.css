@@ -43,6 +43,7 @@
 	font-weight: bold;
 }
 
+/* also includes username and will include rating*/
 .profile-image {
 	float: right;
 	width: 28%;
@@ -51,6 +52,7 @@
 }
 
 .profile-image img {
+	display: block;
 	float: right;
 	height: 100px;
 	width: 100px;
@@ -59,6 +61,13 @@
 	border-radius: 200px;
 }
 .profile-image p {
+	display: block;
 	font-size: 18px;
 	font-weight: bold;
+}
+
+@media screen and (max-width: 672px) {
+	.tourBox {
+		width: 96%;
+	}
 }
