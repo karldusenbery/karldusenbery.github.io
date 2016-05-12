@@ -643,6 +643,10 @@ header nav strong {
     border-bottom: 0px solid black;
   }
 
+  .banner video {
+    display: none;
+  }
+
   .tagline {
     display: none;
   }
