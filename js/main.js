@@ -109,3 +109,15 @@ $('#bannerImg').on('webkitTransitionEnd otransitionend oTransitionEnd msTransiti
     // remove img-moved-left class
     $(this).removeClass('img-moved-left');
 });
+
+//responsive image resizing for mobile
+//to make them load faster on cellular data, I made the images smaller.
+$(function() {
+  if($(window).width() <= 700) {
+    $('#img1').css("background-image", "url(../img/chicago_mobile.jpeg)");
+    $('#img2').css("background-image", "url(../img/forest_mobile.jpeg)");
+    $('#img3').css("background-image", "url(../img/gg-bridge-friends_mobile.jpeg)");
+    $('#img4').css("background-image", "url(../img/hiking_mobile.jpeg)");
+    $('#img5').css("background-image", "url(../img/wooden-bridge_mobile.jpeg)");
+  }
+});
