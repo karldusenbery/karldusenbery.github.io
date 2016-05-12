@@ -387,6 +387,7 @@ header nav strong {
   width: 100%;
   height: 650px;
   margin-bottom: 50px;
+  background-color: white;
 }
 
 .banner video {
@@ -400,20 +401,36 @@ header nav strong {
   /*height: 650px*/;
 }
 
-#img1 {
+.img1 {
   background-image: url(../img/banner/chicago.jpeg);
 }
-#img2 {
+.img2 {
   background-image: url(../img/banner/forest.jpeg);
 }
-#img3 {
+.img3 {
   background-image: url(../img/banner/gg-bridge-friends.jpeg);
 }
-#img4 {
+.img4 {
   background-image: url(../img/banner/hiking.jpeg);
 }
-#img5 {
+.img5 {
   background-image: url(../img/banner/wooden-bridge.jpeg);
+}
+
+.img1mobile {
+  background-image: url(../img/banner/chicago_mobile.jpeg);
+}
+.img2mobile {
+  background-image: url(../img/banner/forest_mobile.jpeg);
+}
+.img3mobile {
+  background-image: url(../img/banner/gg-bridge-friends_mobile.jpeg);
+}
+.img4mobile {
+  background-image: url(../img/banner/hiking_mobile.jpeg);
+}
+.img5mobile {
+  background-image: url(../img/banner/wooden-bridge_mobile.jpeg);
 }
 
 #bannerImg {

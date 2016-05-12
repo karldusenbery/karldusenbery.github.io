@@ -114,10 +114,21 @@ $('#bannerImg').on('webkitTransitionEnd otransitionend oTransitionEnd msTransiti
 //to make them load faster on cellular data, I made the images smaller.
 $(function() {
   if($(window).width() <= 700) {
-    $('#img1').css("background-image", "url(../img/chicago_mobile.jpeg)");
-    $('#img2').css("background-image", "url(../img/forest_mobile.jpeg)");
-    $('#img3').css("background-image", "url(../img/gg-bridge-friends_mobile.jpeg)");
-    $('#img4').css("background-image", "url(../img/hiking_mobile.jpeg)");
-    $('#img5').css("background-image", "url(../img/wooden-bridge_mobile.jpeg)");
+  	console.log("The window is leass than 700 pixels wide");
+
+  	$('#img1').removeClass('img1');
+  	$('#img1').addClass('img1mobile');
+
+  	$('#img2').removeClass('img2');
+  	$('#img2').addClass('img2mobile');
+
+  	$('#img3').removeClass('img3');
+  	$('#img3').addClass('img3mobile');
+
+  	$('#img4').removeClass('img4');
+  	$('#img4').addClass('img4mobile');
+
+  	$('#img5').removeClass('img5');
+  	$('#img5').addClass('img5mobile');
   }
 });
