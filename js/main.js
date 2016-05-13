@@ -67,6 +67,22 @@ function handler475() {
 }
 $(window).on('scroll', handler475);
 
+//for mobile size when .info class is now only 380px high
+function handler130() {
+	if ($(window).scrollTop() >= 130) {
+		console.log("you scrolled greater than 130 pixels from the top." );
+		$('#taste .left-blurb').css('display', 'block');
+		clearInterval(bannerImgTimer);
+		tasteImgTimer = setInterval(function() {
+		    // Add .img-moved-left to first image
+		    $('#taste .infoImg div:first-of-type').addClass('img-moved-left');
+		}, 5000);
+		// $(window).off('scroll');
+	}
+}
+$(window).on('scroll', handler130);
+
+
 function handler1150() {
 	if ($(window).scrollTop() >= 1150) {
 		console.log("you scrolled greater than 1150 pixels from the top." );
@@ -80,6 +96,21 @@ function handler1150() {
 	}
 }
 $(window).on('scroll', handler1150);
+
+//for mobile size when .info class is now only 380px high
+function handler530() {
+	if ($(window).scrollTop() >= 530) {
+		console.log("you scrolled greater than 530 pixels from the top." );
+		$('#sights .right-blurb').css('display', 'block');
+		clearInterval(tasteImgTimer);
+		sightsImgTimer = setInterval(function() {
+		    // Add .img-moved-right to first image
+		    $('#sights .infoImg div:first-of-type').addClass('img-moved-left');
+		}, 5000);
+		// $(window).off('scroll');
+	}
+}
+$(window).on('scroll', handler530);
 
 
 function handler1900() {
@@ -95,6 +126,21 @@ function handler1900() {
 	}
 }
 $(window).on('scroll', handler1900);
+
+//for mobile size when .info class is now only 380px high
+function handler930() {
+	if ($(window).scrollTop() >= 930) {
+		console.log("you scrolled greater than 930 pixels from the top." );
+		$('#sounds .left-blurb').css('display', 'block');
+		clearInterval(sightsImgTimer);
+		soundsImgTimer = setInterval(function() {
+		    // Add .img-moved-left to first image
+		    $('#sounds .infoImg div:first-of-type').addClass('img-moved-left');
+		}, 5000);
+		// $(window).off('scroll');
+	}
+}
+$(window).on('scroll', handler930);
 
 $('.infoImg').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', 'div', function () {
     // append this to end of .infoImg
