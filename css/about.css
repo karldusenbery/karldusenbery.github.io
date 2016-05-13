@@ -1,6 +1,8 @@
 .wrapper {
 	position: relative;
+	top: 33px;
 	top: 2.1rem;
+	margin: 33px 10px;
 	margin: 2.1rem 10px;
 }
 
