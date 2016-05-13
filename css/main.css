@@ -575,6 +575,23 @@ header nav strong {
   background-image: url(../img/info/eat_3.jpeg);
 }
 
+.tasteImg1mobile {
+  background-image: url(../img/info/eat_1_mobile.jpeg);
+}
+.tasteImg2mobile {
+  background-image: url(../img/info/drink_1_mobile.jpeg);
+}
+.tasteImg3mobile {
+  background-image: url(../img/info/eat_2_mobile.jpeg);
+}
+.tasteImg4mobile {
+  background-image: url(../img/info/drink_2_mobile.jpeg);
+}
+.tasteImg5mobile {
+  background-image: url(../img/info/eat_3_mobile.jpeg);
+}
+
+
 .sightsImg1 {
   background-image: url(../img/info/sights_1.jpeg);
 }
@@ -591,6 +608,23 @@ header nav strong {
   background-image: url(../img/info/sights_5.jpeg);
 }
 
+.sightsImg1mobile {
+  background-image: url(../img/info/sights_1_mobile.jpeg);
+}
+.sightsImg2mobile {
+  background-image: url(../img/info/sights_2_mobile.jpeg);
+}
+.sightsImg3mobile {
+  background-image: url(../img/info/sights_3_mobile.jpeg);
+}
+.sightsImg4mobile{
+  background-image: url(../img/info/sights_4_mobile.jpeg);
+}
+.sightsImg5mobile {
+  background-image: url(../img/info/sights_5_mobile.jpeg);
+}
+
+
 .soundsImg1 {
   background-image: url(../img/info/sounds_1.jpg);
 }
@@ -606,6 +640,24 @@ header nav strong {
 .soundsImg5 {
   background-image: url(../img/info/sounds_5.jpeg);
 }
+
+.soundsImg1mobile {
+  background-image: url(../img/info/sounds_1_mobile.jpg);
+}
+.soundsImg2mobile {
+  background-image: url(../img/info/sounds_2_mobile.jpeg);
+}
+.soundsImg3mobile {
+  background-image: url(../img/info/sounds_3_mobile.jpeg);
+}
+.soundsImg4mobile {
+  background-image: url(../img/info/sounds_4_mobile.jpeg);
+}
+.soundsImg5mobile {
+  background-image: url(../img/info/sounds_5_mobile.jpeg);
+}
+
+
 
 .right-blurb {
   position: relative;

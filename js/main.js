@@ -162,6 +162,8 @@ $(function() {
   if($(window).width() <= 700) {
   	console.log("The window is leass than 700 pixels wide");
 
+
+  	//banner images
   	$('#img1').removeClass('img1');
   	$('#img1').addClass('img1mobile');
 
@@ -176,5 +178,55 @@ $(function() {
 
   	$('#img5').removeClass('img5');
   	$('#img5').addClass('img5mobile');
+
+  	//info images
+  	$('#tasteImg1').removeClass('tasteImg1');
+  	$('#tasteImg1').addClass('tasteImg1mobile');
+
+  	$('#tasteImg2').removeClass('tasteImg2');
+  	$('#tasteImg2').addClass('tasteImg2mobile');
+
+  	$('#tasteImg3').removeClass('tasteImg3');
+  	$('#tasteImg3').addClass('tasteImg3mobile');
+
+  	$('#tasteImg4').removeClass('tasteImg4');
+  	$('#tasteImg4').addClass('tasteImg4mobile');
+
+  	$('#tasteImg5').removeClass('tasteImg5');
+  	$('#tasteImg5').addClass('tasteImg5mobile');
+
+
+  	$('#sightsImg1').removeClass('sightsImg1');
+  	$('#sightsImg1').addClass('sightsImg1mobile');
+
+  	$('#sightsImg2').removeClass('sightsImg2');
+  	$('#sightsImg2').addClass('sightsImg2mobile');
+
+  	$('#sightsImg3').removeClass('sightsImg3');
+  	$('#sightsImg3').addClass('sightsImg3mobile');
+
+  	$('#sightsImg4').removeClass('sightsImg4');
+  	$('#sightsImg4').addClass('sightsImg4mobile');
+
+  	$('#sightsImg5').removeClass('sightsImg5');
+  	$('#sightsImg5').addClass('sightsImg5mobile');
+
+
+  	$('#soundsImg1').removeClass('soundsImg1');
+  	$('#soundsImg1').addClass('soundsImg1mobile');
+
+  	$('#soundsImg2').removeClass('soundsImg2');
+  	$('#soundsImg2').addClass('soundsImg2mobile');
+
+  	$('#soundsImg3').removeClass('soundsImg3');
+  	$('#soundsImg3').addClass('soundsImg3mobile');
+
+  	$('#soundsImg4').removeClass('soundsImg4');
+  	$('#soundsImg4').addClass('soundsImg4mobile');
+
+  	$('#soundsImg5').removeClass('soundsImg5');
+  	$('#soundsImg5').addClass('soundsImg5mobile');
+
+
   }
 });
